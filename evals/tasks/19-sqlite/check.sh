@@ -1,0 +1,2 @@
+exp=$(sqlite3 shop.db "select c.name from customers c join orders o on o.customer_id=c.id where c.country='Germany' and o.status='paid' group by c.id having sum(o.amount)>100 order by sum(o.amount) desc")
+[ -n "$exp" ] && [ "$(sed 's/[[:space:]]*$//' answer.txt | grep -v '^$')" = "$exp" ]

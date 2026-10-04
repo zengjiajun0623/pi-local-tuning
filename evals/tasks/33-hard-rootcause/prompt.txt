@@ -1,0 +1,1 @@
+`python3 test_orders.py` fails: order totals come out wrong depending on which orders were computed before. Find the root cause and fix it properly. price_table() is expensive, so it must stay cached (computed once per region per process). Do not edit test_orders.py.

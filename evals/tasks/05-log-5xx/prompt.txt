@@ -1,0 +1,1 @@
+access.log is an nginx access log (combined format). Write the 3 client IPs that received the most 5xx responses into answer.txt, one per line as "<ip> <count>", highest first.

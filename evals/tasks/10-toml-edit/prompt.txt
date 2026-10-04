@@ -1,0 +1,1 @@
+In config.toml: change the server port to 8080, set ui.scrollback to 5000, and add the key binding search = "/" under [ui.keys]. Keep every comment and the rest of the formatting unchanged.

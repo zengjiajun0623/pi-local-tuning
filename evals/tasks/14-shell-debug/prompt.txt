@@ -1,0 +1,1 @@
+./run.sh fails. Fix it so that: `./run.sh` with no arguments prints "Hello, world: 0 items" when the items directory is missing or empty; `./run.sh Bob` prints "Hello, Bob: N items" where N is the number of entries in items/; and the GREETING environment variable overrides "Hello". Keep `set -euo pipefail`.

@@ -1,0 +1,1 @@
+Edit bindings.conf (Hyprland syntax): move the browser binding from SUPER+B to SUPER+SHIFT+B, and add a binding SUPER+SHIFT+N that runs `obsidian` with exec, placed in the Application bindings section. Do not change any other line.

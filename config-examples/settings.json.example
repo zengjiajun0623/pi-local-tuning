@@ -1,0 +1,10 @@
+{
+  "defaultProvider": "halo",
+  "defaultModel": "halogen-qwen3.8-flash-next",
+  "defaultThinkingLevel": "low",
+  "showCacheMissNotices": true,
+  "modelThinkingLevels": {
+    "deepseek/deepseek-flash": "high",
+    "halo/halogen-qwen3.8-flash-next": "low"
+  }
+}

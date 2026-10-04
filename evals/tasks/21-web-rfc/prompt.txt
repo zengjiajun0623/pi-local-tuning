@@ -1,0 +1,1 @@
+Using web search and fetch (do not rely on memory alone), find the HTTP status code that RFC 9110 defines for "Misdirected Request". Write just the number to answer.txt.

@@ -1,0 +1,6 @@
+Implement and export mapLimit(items, limit, fn) in map-limit.js (CommonJS, no dependencies):
+- `items` is any iterable (arrays, Sets, generators, including infinite ones). Consume it lazily: never pull an item before a slot is free to start it.
+- Calls fn(item, index) with at most `limit` calls in flight; starts the next item as soon as any call settles.
+- Returns a Promise resolving to the results in input order. fn may return a value or a promise; if fn throws synchronously, treat it as a rejection.
+- On the first rejection, the returned promise rejects with that error and no further items are pulled or started.
+- `limit` must be a positive integer; otherwise mapLimit throws a RangeError synchronously (it does not return a rejected promise).

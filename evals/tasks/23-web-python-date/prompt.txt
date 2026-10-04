@@ -1,0 +1,1 @@
+Using web search and fetch, find the release date of Python 3.12.0 (the final release, not a beta or rc). Write it to answer.txt as YYYY-MM-DD.

@@ -1,0 +1,1 @@
+From packages.json, write to answer.txt the names of packages whose major version is 2 or higher and that depend directly on lodash, sorted alphabetically, one per line.

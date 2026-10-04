@@ -1,0 +1,1 @@
+Add a --json flag to inventory.py that prints a JSON object {"items": [{"name", "qty", "price", "total"}...], "total": ...} instead of the text report. qty is an int; price and total are numbers rounded to 2 decimals. The text output without the flag must not change.

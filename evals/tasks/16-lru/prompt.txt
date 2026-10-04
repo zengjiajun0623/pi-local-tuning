@@ -1,0 +1,1 @@
+Implement class LRUCache in lru.py: LRUCache(capacity); get(key) returns the value or -1 and marks the key as most recently used; put(key, value) inserts or updates the key (also marking it most recently used) and evicts the least recently used key when over capacity. Both operations O(1). Capacity 0 stores nothing.

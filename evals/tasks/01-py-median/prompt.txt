@@ -1,0 +1,1 @@
+stats.py: median() returns wrong results for some inputs and crashes on an empty list. Fix it: an even-length list returns the average of the two middle values, and an empty list raises ValueError. Keep mean() unchanged.

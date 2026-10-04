@@ -1,0 +1,6 @@
+Implement parse(text) in confparse.py for an nginx-like config format, returning a list of directives. Each directive is a dict {"name": str, "args": [str, ...]} plus a "block": [directives...] key only when it has a block.
+- A directive is a name followed by zero or more args, ended by ";" or by a block "{ ... }" (no ";" after the block).
+- Tokens are separated by whitespace; ";", "{" and "}" are always separate tokens even without spaces (e.g. "root /var;}" ).
+- Quoted args use "..." or '...'; a backslash inside quotes makes the next character literal (so \" and \\ work); quotes are removed in the result. A quoted string may be empty.
+- "#" starts a comment running to the end of the line, but only where a new token could start (not inside quotes, and not in the middle of a word like a#b).
+- Errors raise ValueError whose message contains "line N" (1-based): an unexpected "}" or ";" or "{" with no name, a missing ";" at end of input, an unclosed "{" (report the line where it was opened), and an unterminated quote (report the line where it started).

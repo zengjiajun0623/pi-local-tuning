@@ -1,0 +1,1 @@
+dupes.py is far too slow on big inputs; it must handle a 200,000-line file in well under a second. Make it fast without changing its output in any way (including order).

@@ -1,0 +1,1 @@
+`node test.js` fails. Read README.md for the pricing rules and fix the bug in the source code (do not change test.js).

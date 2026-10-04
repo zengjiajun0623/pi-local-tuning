@@ -1,0 +1,1 @@
+Write an executable bash script backup.sh that creates backups/data-YYYYMMDD-HHMMSS.tar.gz containing the data/ directory (create backups/ if missing), then deletes older archives so that only the newest 3 data-*.tar.gz files remain. It must work when run from any directory: paths are relative to the script's own location.

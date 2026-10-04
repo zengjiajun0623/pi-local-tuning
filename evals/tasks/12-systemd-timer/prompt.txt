@@ -1,0 +1,1 @@
+Write systemd user units in this directory: sync.service runs `/usr/bin/rclone sync /home/me/docs remote:docs` and restarts on failure after 30 seconds; sync.timer triggers it every 15 minutes and also once shortly after boot. The timer must be installable with `systemctl --user enable sync.timer`.

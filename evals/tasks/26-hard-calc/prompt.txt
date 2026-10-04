@@ -1,0 +1,7 @@
+Implement evaluate(expr, variables=None) in calc.py without eval/exec/compile/ast. Supported:
+- numbers like 3, 3.25, .5; variables are identifiers looked up in the `variables` dict
+- binary + - * / % and ** ; ** is right-associative and binds tighter than unary minus (-2**2 == -4, 2**-1 == 0.5)
+- unary + and - (stackable: --3 == 3), parentheses, whitespace anywhere between tokens
+- functions min(...), max(...) with one or more arguments, abs(x) with exactly one
+- usual precedence: ** > unary > * / % > + -; * / % and + - are left-associative
+Raise ValueError for: malformed input (e.g. "1+", "2 3", "(1", "1)"), unknown variables or functions, wrong argument counts, and division or modulo by zero.

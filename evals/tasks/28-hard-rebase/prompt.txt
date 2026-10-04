@@ -1,0 +1,1 @@
+In this repo, rebase the `feature` branch onto `main`, resolving any conflicts so that BOTH branches' changes are kept. Afterwards: `feature` is checked out, its history is linear on top of main (no merge commits), it still has its own 2 commits, the working tree is clean, and both `python3 test_main.py` and `python3 test_feature.py` pass. Do not modify the test files.

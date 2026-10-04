@@ -1,0 +1,1 @@
+Fix the Makefile. Requirements: `make` builds ./app from a clean checkout; `make -j8` works; changing any header in include/ rebuilds exactly the objects that include it (and relinks); running make again with nothing changed rebuilds nothing; `make clean` removes ./app and all build artifacts, even if a file named "clean" exists. Do not change the C sources or headers.

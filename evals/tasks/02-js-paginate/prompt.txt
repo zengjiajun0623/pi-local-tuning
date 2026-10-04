@@ -1,0 +1,1 @@
+paginate.js has bugs: page 1 should be the first page, and the page count is wrong when the last page is only partly full. Fix them.

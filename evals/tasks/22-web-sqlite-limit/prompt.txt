@@ -1,0 +1,1 @@
+Using the official SQLite documentation (search and fetch it), find the default value of SQLITE_MAX_VARIABLE_NUMBER for SQLite versions after 3.32.0. Write just the number to answer.txt.

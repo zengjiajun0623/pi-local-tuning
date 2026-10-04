@@ -1,0 +1,1 @@
+Write totals.json: a JSON object mapping each region in sales.csv to its total revenue (sum of units * unit_price), rounded to 2 decimals, with keys sorted.

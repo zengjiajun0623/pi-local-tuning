@@ -1,0 +1,47 @@
+{
+  "providers": {
+    "halo": {
+      "baseUrl": "http://localhost:8731/v1",
+      "api": "openai-completions",
+      "apiKey": "EMPTY",
+      "models": [
+        {
+          "id": "halogen-qwen3.8-flash-next",
+          "name": "Qwen3.8 Flash-Next (halogen)",
+          "input": [
+            "text",
+            "image"
+          ],
+          "reasoning": true,
+          "contextWindow": 262144,
+          "maxTokens": 32768,
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "thinkingLevelMap": {
+            "off": "none",
+            "minimal": "low",
+            "low": "low",
+            "medium": "medium",
+            "high": "xhigh",
+            "xhigh": "xhigh",
+            "max": "xhigh"
+          },
+          "inputLimits": {
+            "images": {
+              "resize": {
+                "maxWidth": 1600,
+                "maxHeight": 1600,
+                "maxBytes": 2097152,
+                "jpegQuality": 85
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

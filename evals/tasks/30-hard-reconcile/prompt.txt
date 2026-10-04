@@ -1,0 +1,5 @@
+Reconcile bank.csv against ledger.csv and write unmatched.json as {"bank_only": [...], "ledger_only": [...]}, each a sorted list of 0-based data row indexes (header excluded) that stay unmatched.
+- bank.csv: dates DD/MM/YYYY; amounts in European format ("1.234,56", "-12,00", or "(12,00)" meaning negative).
+- ledger.csv: ISO dates; amounts like "-12.00" or "1234.56".
+- Two rows match when their amounts are exactly equal (to the cent, sign included) and their dates are at most 2 days apart.
+- Process bank rows in file order. For each, pick among the still-unmatched ledger rows that match it the one with the smallest date difference; break ties by the lowest ledger index. Each row matches at most once.

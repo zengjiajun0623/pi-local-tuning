@@ -1,0 +1,1 @@
+shop.db is a SQLite database. Write to answer.txt the names of customers from Germany whose total of orders with status 'paid' exceeds 100, sorted by that total descending, one name per line.

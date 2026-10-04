@@ -1,0 +1,1 @@
+Rename the function get_usr to get_user everywhere in this project (its definition and every call site). Do not rename any other identifier. `python3 run_tests.py` must still pass.

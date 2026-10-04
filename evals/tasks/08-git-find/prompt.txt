@@ -1,0 +1,1 @@
+In this git repository, find the commit that first introduced the text FIXME-42 and write its full 40-character hash to answer.txt.
