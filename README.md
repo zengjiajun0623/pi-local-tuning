@@ -23,8 +23,7 @@ so on this hardware routing is about speed and privacy, not capability.
   and the same tasks, so wall times are directly comparable.
 - Eval suite: auto-graded repo tasks in two sets, an easy set (tasks 01-24)
   and a hard set (tasks 25-34), interleaved arms, one rep (greedy decoding
-  makes runs near-deterministic). This public copy ships 23 of the 24 easy
-  tasks (see `evals/README.md`). Full tables in
+  makes runs near-deterministic). Full tables in
   [evals/results/SUMMARY.md](evals/results/SUMMARY.md).
 - Background baseline from 669 real halo turns before any prompt changes:
   prefix cache hit 96.4%, avg decode 53.2 tok/s, draft acceptance 69%, p90
@@ -88,7 +87,7 @@ so on this hardware routing is about speed and privacy, not capability.
 ### Tool behavior
 
 - **The local model never sets a bash `timeout` itself** (the cloud model did,
-  30/60/120 s), so a runaway command blocks the agent indefinitely. The
+  30/60/120 s), so a slow or hung command stalls the whole turn. The
   `bash-default-timeout` extension injects a 120 s default; when it fired on
   a runaway task rerun, wall time went from 594 s to 353 s.
 - **`pi --mode json` hangs when stdin is a non-TTY that never closes** (for

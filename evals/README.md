@@ -1,7 +1,6 @@
 # Pi eval suite (local Qwen on halogen)
 
-23 auto-graded tasks in tasks/NN-name/{task.json,prompt.txt,setup.sh,check.sh,solution.sh}.
-(This public copy omits the original task 13, an email-extraction task whose fixture data is email addresses.)
+34 auto-graded tasks (01-24 easy, 25-34 hard) in tasks/NN-name/{task.json,prompt.txt,setup.sh,check.sh,solution.sh}.
 check.sh runs in the work dir after Pi finishes; exit 0 = pass. Graders are hidden from the agent.
 
 - ./selftest.sh   grader audit: every check must FAIL on the untouched fixture and PASS after solution.sh. Run after editing any task.

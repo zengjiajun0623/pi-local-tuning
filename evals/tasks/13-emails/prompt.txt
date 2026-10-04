@@ -1,0 +1,1 @@
+Extract every email address from messy.txt into emails.txt: lowercase, unique, sorted, one per line. Skip addresses whose domain has no dot (like root@localhost), and strip surrounding punctuation.
